@@ -1,5 +1,5 @@
 # Hi-Lo
-Implementation of a game of Hi-Lo. 
+Implementation of a game of [Hi-Lo](http://en.wikipedia.org/wiki/Sic_bo). 
 
 **RULES**
 
