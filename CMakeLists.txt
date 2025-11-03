@@ -17,8 +17,6 @@ set(PROJECT_HEADERS
     ${CMAKE_CURRENT_LIST_DIR}/include/ErrorHandling.h
 )
 
-find_package(Boost 1.80.0 CONFIG REQUIRED)
-
 add_executable(${PROJECT_NAME}
     WIN32 MACOSX_BUNDLE
     ${PROJECT_HEADERS}
@@ -27,11 +25,6 @@ add_executable(${PROJECT_NAME}
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_LIST_DIR}/include"
-)
-
-target_link_libraries(${PROJECT_NAME}
-    PRIVATE
-        Boost::headers
 )
 
 target_compile_options(${PROJECT_NAME} PRIVATE 
